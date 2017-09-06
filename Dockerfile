@@ -1,6 +1,7 @@
 FROM dancinllama/dockerdx
 RUN git clone https://github.com/wadewegner/sfdx-waw-plugin.git && \
-    apt-get install curl && \
+    apt-get update && \
+    apt-get install -yq curl && \
     curl -sL https://deb.nodesource.com/setup | bash - && \
     apt-get install -yq nodejs build-essential && \
     npm install && \
