@@ -7,5 +7,6 @@ RUN git clone https://github.com/wadewegner/sfdx-waw-plugin.git && \
     cd sfdx-waw-plugin && \
     npm install && \
     sfdx plugins:link . && \
-    sfdx plugins:install sfdx-waw-plugin
+    sfdx plugins:install sfdx-waw-plugin && \
+    cd ..
     
